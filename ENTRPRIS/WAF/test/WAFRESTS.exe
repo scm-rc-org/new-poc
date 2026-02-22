@@ -1,0 +1,6 @@
+       PROCESS DYN OPT(FULL) TRUNC(OPT)                                         
+      *                                                                         
+       IDENTIFICATION DIVISION.                                                 
+       PROGRAM-ID.    WAFRESTS.                                                 
+       AUTHOR.        CSSD MSE.                                                 
+       DATE-WRITTEN.  June 2016.                                                
