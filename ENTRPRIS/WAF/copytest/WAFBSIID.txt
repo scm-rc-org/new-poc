@@ -1,0 +1,34 @@
+      ******************************************************************        
+      *  BSI FRAMEWORKS GENERIC CALL ROTINUE                           *        
+      *  PARAMETER LIST OF WAFBSIIS PROGRAM                            *        
+      ******************************************************************        
+      *    COPY: WAFBSIID                                              *        
+      *  AUTHOR: TAG SERVICES SUPPORT                                  *        
+      ******************************************************************        
+      *  MAINTENANCE LOG:                                              *        
+      *  DATE     USER-ID                DESCRIPTION                   *        
+      *  ----     -------                -----------                   *        
+      * 01/01/14  CSSD SERVICE SUPPORT-  INITIAL VERSION               *        
+      * 12/12/14  CSSD SERVICE SUPPORT-  ADD 88 FOR ADDMEMACM          *        
+      *                                  GETMEMACM, GETMBHSTACM.       *        
+      *                                  PAGING FIELDS ADDED.          *        
+NASCO * 10/18/14  CSSD                -  ADDED NASCO XTEN SERVICE FOR  *        
+NASCO *                                  REGRESSION TEST BED           *        
+NASCO * 10/27/15  CSSD                -  ADDED CHECKERRORACTOREEE      *        
+NASCO *                                  SERVICE                       *        
+FDCS  * 10/20/17  CSSD                -  ADDED GETFDCSCS90             *        
+FDCS  *                                  SERVICE                       *        
+FDCS  * 10/20/17  CSSD                -  ADDED GETFDCSNASCO            *        
+FDCS  *                                  SERVICE                       *        
+FDCS  * 10/20/17  CSSD                -  ADDED GETFDCSWGS              *        
+FDCS  *                                  SERVICE                       *        
+      ******************************************************************        
+       01  WAFBSIID-PARM-LIST.                                                  
+                                                                                
+           05  WAFBSIID-PGM-NAME            PIC X(08)  VALUE 'WAFBSIIS'.        
+           05  WAFBSIID-VERSION             PIC S9(03) VALUE +0.                
+           05  WAFBSIID-CALLING-PGM         PIC X(08)  VALUE SPACES.            
+      *                                                                         
+           05  WAFBSIID-STATUS-CODE         PIC X(02)  VALUE SPACES.            
+               88  WAFBSIID-STATUS-OK                  VALUE '00'.              
+               88  WAFBSIID-STATUS-NOT-OK              VALUE '10'.              
