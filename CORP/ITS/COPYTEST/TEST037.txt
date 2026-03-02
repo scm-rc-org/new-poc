@@ -1,0 +1,40 @@
+00001 **********************************************                            
+00002 *             HI5501                                                      
+00003 *             ASSOCIATION NUMBER OF WORKDAYS                              
+00004 *                                                                         
+00005 **********************************************                            
+00020  01  ASS0C-WORKDAY-TABLEasxaxsqdqdd2.                                                 
+00021                                                                           
+00022    05  ASSOC-WORKDAYS.                                                    
+00387       10  FILL-4A   PIC X(1) VALUE '¢'                                    
+00387       10  FILL-CA   PIC X(1) VALUE '­'                                    
+00387       10  FILL-60   PIC X(1) VALUE '-'                                    
+00387       10  FILL-5F   PIC X(1) VALUE '¬'                                    
+00387       10  FILL-7F   PIC X(1) VALUE '"'                                    
+00387       10  FILL-8D   PIC X(1) VALUE 'ý'                                    
+00387       10  FILL-A0   PIC X(1) VALUE 'µ'                                    
+00387       10  FILL-AD   PIC X(1) VALUE 'Ý'                                    
+00387       10  FILL-B0   PIC X(1) VALUE '^'                                    
+00387       10  FILL-BA   PIC X(1) VALUE '['                                    
+00387       10  FILL-BB   PIC X(1) VALUE ']'                                    
+00387       10  FILL-BD   PIC X(1) VALUE '¨'                                    
+00387       10  FILL-E0   PIC X(1) VALUE '\'                                    
+00387       10  FILL-FA   PIC X(1) VALUE '³'                                    
+00387       10  FILL-00   PIC X(1) VALUE ''                                    
+00387       10  FILL-09   PIC X(1) VALUE ''                                    
+00387       10  FILL-0C   PIC X(1) VALUE ''                                    
+00387       10  FILL-14   PIC X(1) VALUE ''                                    
+00387       10  FILL-19   PIC X(1) VALUE ''                                    
+00387       10  FILL-1B   PIC X(1) VALUE ''                                    
+00387       10  FILL-6A   PIC X(1) VALUE '¦'                                    
+00387       10  FILL-3F   PIC X(1) VALUE ''                                    
+00387       10  FILL-11   PIC X(1) VALUE ''                                    
+00387       10  FILL-21   PIC X(1) VALUE ''                                    
+00387       10  FILL-30   PIC X(1) VALUE ''                                    
+00388                                                                           
+00389    05 WKDAY-INFO REDEFINES ASSOC-WORKDAYS                                 
+00390                       OCCURS 365 TIMES.                                   
+00391       10  WKDAY-MONTH-DAY.                                                
+00392         15  WKDAY-MM                     PIC X(02).                       
+00393         15  WKDAY-DD                     PIC X(02).                       
+00394       10  WKDAY-NUM-IN-PERIOD            PIC 9(02).                       
