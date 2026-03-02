@@ -3,7 +3,7 @@
 00003 *             ASSOCIATION NUMBER OF WORKDAYS                              
 00004 *                                                                         
 00005 **********************************************                            
-00020  01  ASS0C-WORKDAY-TABLE.                                                 
+00020  01  ASS0C-WORKDAY-TABLEasxaxsqdqdd2.                                                 
 00021                                                                           
 00022    05  ASSOC-WORKDAYS.                                                    
 00387       10  FILL-4A   PIC X(1) VALUE '¢'                                    
