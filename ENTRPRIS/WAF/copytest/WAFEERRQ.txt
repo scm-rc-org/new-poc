@@ -15,12 +15,12 @@
       * ---> PaymentHubEEDR-Rqst                                        00150000
       **                                                                00160000
        01  (PRE)-PH-EEDR-REQUEST.                                       00170000
-           05  (PRE)-MEMBER-HCID            PIC X(15).                  00190000
-           05  (PRE)-MEMBER-TOKEN-NUMBER    PIC X(32).                  00200000
-           05  (PRE)-MEMBER-EFT-EFF-DATE    PIC X(10).                  00210000
-           05  (PRE)-MEMBER-EFT-TERM-DATE   PIC X(10).                  00220000
-           05  (PRE)-MEMBER-EFT-STATUS-CD   PIC X(01).                  00230000
-           05  FILLER                       PIC X(132).                 00240000
+           06  (PRE)-MEMBER-HCID            PIC X(15).                  00190000
+           07  (PRE)-MEMBER-TOKEN-NUMBER    PIC X(32).                  00200000
+           09  (PRE)-MEMBER-EFT-EFF-DATE    PIC X(10).                  00210000
+           11  (PRE)-MEMBER-EFT-TERM-DATE   PIC X(10).                  00220000
+           10  (PRE)-MEMBER-EFT-STATUS-CD   PIC X(01).                  00230000
+           03  FILLER                       PIC X(132).                 00240000
       ******************************************************************00250000
       **    End of   PaymentHubEEDR-Rqst                              **00260000
       ******************************************************************00270000
